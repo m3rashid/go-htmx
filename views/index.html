@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{.Title}}</title>
+    <meta charset="UTF-8" />
+    <link href="/public/css/styles.css" rel="stylesheet" />
+    <script src="/public/js/index.js"></script>
+    <link rel="icon" href="/public/icons/favicon.ico" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.6"
+      integrity="sha384-FhXw7b6AlE/jyjlZH5iHa/tTe9EpJ1Y55RjcgPbjeWMskSxZt1v9qkxLJWNJaGni"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="min-h-full">
+      {{template "partials/header" .}}
+
+      <div class="py-10">
+        <header>
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h1
+              class="text-3xl font-bold leading-tight tracking-tight text-gray-900"
+            >
+              Dashboard
+            </h1>
+          </div>
+        </header>
+        <main>
+          <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">Contents</div>
+        </main>
+      </div>
+
+      {{template "partials/footer" .}}
+    </div>
+  </body>
+</html>
